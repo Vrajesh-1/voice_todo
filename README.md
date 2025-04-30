@@ -45,4 +45,4 @@ A cross-platform Flutter app to manage your to-do list with voice commands and r
 - Dark mode and accessibility enhancements.
 
 
-*Made with Flutter, Firebase
+*Made with Flutter, Firebase*
