@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "761253690145",
+    "project_id": "voice-todo-4666b",
+    "storage_bucket": "voice-todo-4666b.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:761253690145:android:fe083668dfb66ce7b9dc60",
+        "android_client_info": {
+          "package_name": "com.example.voice_todo"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCGjx8WjUWBBkqfTk-Xdq3IwwyyDyYvSGI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
