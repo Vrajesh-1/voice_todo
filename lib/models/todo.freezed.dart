@@ -21,17 +21,11 @@ Todo _$TodoFromJson(Map<String, dynamic> json) {
 
 /// @nodoc
 mixin _$Todo {
-  @HiveField(0)
   String get id => throw _privateConstructorUsedError;
-  @HiveField(1)
   String get title => throw _privateConstructorUsedError;
-  @HiveField(2)
   String? get description => throw _privateConstructorUsedError;
-  @HiveField(3)
   bool get isCompleted => throw _privateConstructorUsedError;
-  @HiveField(4)
   DateTime? get createdAt => throw _privateConstructorUsedError;
-  @HiveField(5)
   DateTime? get updatedAt => throw _privateConstructorUsedError;
 
   /// Serializes this Todo to a JSON map.
@@ -49,12 +43,12 @@ abstract class $TodoCopyWith<$Res> {
       _$TodoCopyWithImpl<$Res, Todo>;
   @useResult
   $Res call({
-    @HiveField(0) String id,
-    @HiveField(1) String title,
-    @HiveField(2) String? description,
-    @HiveField(3) bool isCompleted,
-    @HiveField(4) DateTime? createdAt,
-    @HiveField(5) DateTime? updatedAt,
+    String id,
+    String title,
+    String? description,
+    bool isCompleted,
+    DateTime? createdAt,
+    DateTime? updatedAt,
   });
 }
 
@@ -127,12 +121,12 @@ abstract class _$$TodoImplCopyWith<$Res> implements $TodoCopyWith<$Res> {
   @override
   @useResult
   $Res call({
-    @HiveField(0) String id,
-    @HiveField(1) String title,
-    @HiveField(2) String? description,
-    @HiveField(3) bool isCompleted,
-    @HiveField(4) DateTime? createdAt,
-    @HiveField(5) DateTime? updatedAt,
+    String id,
+    String title,
+    String? description,
+    bool isCompleted,
+    DateTime? createdAt,
+    DateTime? updatedAt,
   });
 }
 
@@ -196,35 +190,29 @@ class __$$TodoImplCopyWithImpl<$Res>
 @JsonSerializable()
 class _$TodoImpl implements _Todo {
   const _$TodoImpl({
-    @HiveField(0) required this.id,
-    @HiveField(1) required this.title,
-    @HiveField(2) this.description,
-    @HiveField(3) this.isCompleted = false,
-    @HiveField(4) this.createdAt,
-    @HiveField(5) this.updatedAt,
+    required this.id,
+    required this.title,
+    this.description,
+    this.isCompleted = false,
+    this.createdAt,
+    this.updatedAt,
   });
 
   factory _$TodoImpl.fromJson(Map<String, dynamic> json) =>
       _$$TodoImplFromJson(json);
 
   @override
-  @HiveField(0)
   final String id;
   @override
-  @HiveField(1)
   final String title;
   @override
-  @HiveField(2)
   final String? description;
   @override
   @JsonKey()
-  @HiveField(3)
   final bool isCompleted;
   @override
-  @HiveField(4)
   final DateTime? createdAt;
   @override
-  @HiveField(5)
   final DateTime? updatedAt;
 
   @override
@@ -277,33 +265,27 @@ class _$TodoImpl implements _Todo {
 
 abstract class _Todo implements Todo {
   const factory _Todo({
-    @HiveField(0) required final String id,
-    @HiveField(1) required final String title,
-    @HiveField(2) final String? description,
-    @HiveField(3) final bool isCompleted,
-    @HiveField(4) final DateTime? createdAt,
-    @HiveField(5) final DateTime? updatedAt,
+    required final String id,
+    required final String title,
+    final String? description,
+    final bool isCompleted,
+    final DateTime? createdAt,
+    final DateTime? updatedAt,
   }) = _$TodoImpl;
 
   factory _Todo.fromJson(Map<String, dynamic> json) = _$TodoImpl.fromJson;
 
   @override
-  @HiveField(0)
   String get id;
   @override
-  @HiveField(1)
   String get title;
   @override
-  @HiveField(2)
   String? get description;
   @override
-  @HiveField(3)
   bool get isCompleted;
   @override
-  @HiveField(4)
   DateTime? get createdAt;
   @override
-  @HiveField(5)
   DateTime? get updatedAt;
 
   /// Create a copy of Todo
