@@ -44,9 +44,5 @@ A cross-platform Flutter app to manage your to-do list with voice commands and r
 - Enhanced offline sync and undo/redo actions.
 - Dark mode and accessibility enhancements.
 
-## License
-MIT
 
----
-
-*Made with Flutter, Firebase, and 💡*
+*Made with Flutter, Firebase
